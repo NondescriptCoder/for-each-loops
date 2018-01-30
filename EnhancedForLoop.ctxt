@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=EnhancedForLoop
+comment1.params=
+comment1.target=void\ example()
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment2.text=Tester\ Method*******
+comment3.params=nums
+comment3.target=double\ mean(double[])
+comment3.text=Your\ turn\ *********
+comment4.params=nums
+comment4.target=double\ max(double[])
+comment5.params=nums
+comment5.target=int\ sumEvenVals(int[])
+comment6.params=list
+comment6.target=int\ vowelCount(java.lang.String[])
+comment7.params=nums
+comment7.target=double\ sumEvenLocs(double[])
+comment8.params=nums
+comment8.target=double\ regularSumEvenLocs(double[])
+numComments=9
