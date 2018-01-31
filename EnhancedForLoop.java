@@ -74,6 +74,9 @@ public class EnhancedForLoop
         //5
         System.out.println(sumEvenLocs(doubleArray));
         
+        //6
+        System.out.println(regularSumEvenLocs(doubleArray));
+        
     }
 
     /********** Your turn **********/
@@ -121,7 +124,10 @@ public class EnhancedForLoop
 
         for(int a: nums)
         {
-            sum += a;
+            if(a%2 == 0)
+            {
+                sum += a;
+            }
         }
 
         return sum;
@@ -159,23 +165,17 @@ public class EnhancedForLoop
 
     public static double sumEvenLocs(double nums[])
     {
-        int sum = 0;
+        double sum = 0;
         boolean isEven = true;
 
         for(double a: nums)
         {
-            if(isEven) 
-            {
-                sum++;
-                    isEven = false;
-                }
-                else
-                {
-                    isEven = true;
-                }
-            }
-
-            return sum;
+            if(isEven) sum += a;
+            
+            isEven = !isEven;
+        }
+        
+        return sum;
     }
 
     // #6 - Solve #5 using a regular for loop. Then explain why a
@@ -183,12 +183,12 @@ public class EnhancedForLoop
 
     public static double regularSumEvenLocs(double nums[])
     {
-        int sum = 0;
+        double sum = 0;
         boolean isEven = true;
 
         for(int i = 0; i < nums.length; i+=2)
         {
-            sum++;
+            sum += nums[i];
         }
 
         return sum;
